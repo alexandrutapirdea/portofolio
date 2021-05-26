@@ -1,0 +1,26 @@
+{
+  "name": "alexandru-tapirdea",
+  "version": "1.0.0",
+  "private": true,
+  "description": "alexandru-tapirdea",
+  "keywords": [
+    "gatsby"
+  ],
+  "scripts": {
+    "develop": "gatsby develop",
+    "start": "gatsby develop",
+    "build": "gatsby build",
+    "serve": "gatsby serve",
+    "clean": "gatsby clean"
+  },
+  "dependencies": {
+    "gatsby": "^3.4.1",
+    "gatsby-plugin-gatsby-cloud": "^2.6.0",
+    "gatsby-plugin-netlify-cms": "^5.6.0",
+    "gatsby-plugin-sass": "^4.6.0",
+    "netlify-cms-app": "^2.15.11",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "sass": "^1.34.0"
+  }
+}
