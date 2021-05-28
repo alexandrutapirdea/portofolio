@@ -1,7 +1,6 @@
 import * as React from "react";
 import "./Home.scss";
-import jsLogo from "../../public/static/javascript-logo.svg";
-import profilPhoto from "../../public/static/profil.jpg";
+import profilPhoto from "../images/profil.jpg";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
