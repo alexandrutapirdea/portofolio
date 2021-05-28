@@ -1,0 +1,16 @@
+@import "../partials/colors";
+@import "../partials/breakpoints";
+@import "../partials/fonts";
+
+.about {
+  &__container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    flex-direction: column;
+    border: 5px solid red;
+    background-color: blue;
+    width: 100vw;
+  }
+}

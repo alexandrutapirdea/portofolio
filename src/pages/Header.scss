@@ -1,0 +1,29 @@
+@import "../partials/colors";
+@import "../partials/breakpoints";
+@import "../partials/fonts";
+
+.header {
+  &__container {
+    background-color: $pumpkin;
+    padding: 10px;
+    position: absolute;
+    z-index: 999;
+    display: flex;
+    justify-content: end;
+    padding-right: 150px;
+
+    @include desktop {
+      width: calc(100vw - 17px);
+    }
+
+    & > * {
+      margin-right: 20px;
+      background-color: $rich-black-fogra-29 !important;
+
+      &:hover {
+        cursor: pointer;
+        background-color: lighten($rich-black-fogra-29, 20%) !important;
+      }
+    }
+  }
+}

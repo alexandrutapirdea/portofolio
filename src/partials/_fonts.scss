@@ -1,0 +1,8 @@
+@mixin Kaufland-Regular() {
+  @font-face {
+    font: {
+      family: "Kaufland-Regular" !important;
+    }
+    src: url("../../assets/fonts/Kaufland-RegularItalic.woff2") format("woff");
+  }
+}
