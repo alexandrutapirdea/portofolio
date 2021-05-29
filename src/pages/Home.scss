@@ -13,10 +13,6 @@ body {
 }
 
 $timing: 265ms;
-$iconColor: #ff003c;
-$accent: #c648c8;
-$grape: #7b00e0;
-$orchid: #ae31d9;
 
 @mixin transformScale($size: 1) {
   transform: scale($size);
@@ -143,4 +139,8 @@ $orchid: #ae31d9;
     opacity: 0.5;
     cursor: pointer;
   }
+}
+
+.important {
+  color: $international-orange-aerospace;
 }

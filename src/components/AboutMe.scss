@@ -6,11 +6,85 @@
   &__container {
     display: flex;
     align-items: center;
-    justify-content: center;
-    height: 100vh;
+    min-height: 100vh;
     flex-direction: column;
-    border: 5px solid red;
-    background-color: blue;
+    background-color: $pumpkin;
     width: 100vw;
+    max-width: 100%;
+  }
+
+  &__title {
+    margin-top: 40px;
+    text-align: center;
+  }
+
+  &__description {
+    color: $rich-black-fogra-29;
+
+    &__container {
+      max-width: 50%;
+      margin-top: 20px;
+      text-align: justify;
+      @include phoneAndTablet {
+        max-width: 90%;
+      }
+    }
+  }
+
+  &__section {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    max-width: 50%;
+    text-align: justify;
+
+    @include phoneAndTablet {
+      max-width: 90%;
+    }
+
+    &__image {
+      width: 60%;
+      @include phoneAndTablet {
+        width: 100%;
+      }
+    }
+    &__title {
+      margin-top: 40px;
+      max-width: 40%;
+      text-align: center;
+
+      @include phoneAndTablet {
+        max-width: 90%;
+      }
+    }
+
+    &__description,
+    &__description > * {
+      color: $rich-black-fogra-29;
+      margin-top: 10px;
+    }
+  }
+}
+
+iframe {
+  width: 100%;
+  height: 40vh;
+}
+
+.link {
+  margin-top: 20px;
+
+  & > a {
+    color: darkblue;
+    text-decoration: underline;
+  }
+}
+
+.pointer {
+  margin-top: 10px;
+  margin-bottom: 20px;
+  &:hover {
+    opacity: 0.5;
+    cursor: pointer;
   }
 }

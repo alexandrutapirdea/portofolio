@@ -28,8 +28,8 @@ const Home = () => {
       <h3 className="home__subtitle">Full Stack Web Developer</h3>
       <div className="typewriter">
         <h4 className="home__description">
-          <b>Developing</b> complex web applications and <b>teaching</b> web
-          development fundamentals{" "}
+          <b className="important">Developing</b> complex web applications and{" "}
+          <b className="important">teaching</b> web development fundamentals{" "}
         </h4>
       </div>
       <div className="home__social-container">

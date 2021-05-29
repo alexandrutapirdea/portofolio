@@ -1,9 +1,9 @@
-import * as React from "react";
+import React from "react";
 import Home from "./Home";
 import AboutMe from "../components/AboutMe";
+import Contact from "../components/Contact";
 import Header from "./Header";
 import "bootstrap/dist/css/bootstrap.min.css";
-import { Parallax, ParallaxLayer } from "@react-spring/parallax";
 
 // styles
 
@@ -12,24 +12,9 @@ const IndexPage = () => {
   return (
     <>
       <Header />
-      <Parallax pages={2} style={{ top: "0", left: "0" }}>
-        <ParallaxLayer offset={0} speed={1}>
-          <Home />
-        </ParallaxLayer>
-
-        <ParallaxLayer
-          offset={1}
-          speed={0.5}
-          style={{
-            display: "flex",
-            justifyContent: "center",
-            alignItems: "center",
-            color: "white",
-          }}
-        >
-          <AboutMe />
-        </ParallaxLayer>
-      </Parallax>
+      <Home />
+      <AboutMe />
+      <Contact />
     </>
   );
 };

@@ -1,0 +1,58 @@
+@import "../partials/colors";
+@import "../partials/breakpoints";
+@import "../partials/fonts";
+
+.contact {
+  &__container {
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+    flex-direction: column;
+    background-color: $rich-black-fogra-29;
+    width: 100vw;
+    max-width: 100%;
+  }
+
+  &__title {
+    margin-top: 40px;
+    text-align: center;
+  }
+
+  &__description {
+    color: $baby-powder;
+
+    &__container {
+      max-width: 50%;
+      margin-top: 20px;
+      text-align: justify;
+      @include phoneAndTablet {
+        max-width: 90%;
+      }
+    }
+  }
+}
+
+form {
+  width: 50vw;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+input,
+textarea {
+  width: 50vw !important;
+}
+
+textarea {
+  height: 200px;
+}
+
+.submitBtn {
+  width: 50%;
+  margin: 0 auto;
+  position: relative;
+  background-color: $international-orange-aerospace !important;
+  border: none !important;
+  cursor: pointer;
+}

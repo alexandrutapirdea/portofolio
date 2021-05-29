@@ -6,7 +6,7 @@
   &__container {
     background-color: $pumpkin;
     padding: 10px;
-    position: absolute;
+    position: fixed;
     z-index: 999;
     display: flex;
     justify-content: end;
