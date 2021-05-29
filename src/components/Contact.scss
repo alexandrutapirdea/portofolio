@@ -2,6 +2,9 @@
 @import "../partials/breakpoints";
 @import "../partials/fonts";
 
+div.collapse {
+  margin: 0 auto;
+}
 .contact {
   &__container {
     display: flex;

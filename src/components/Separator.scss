@@ -5,10 +5,14 @@
 .separator {
   &__container {
     width: 100vw;
-    height: 30px;
     max-width: 100%;
     background-color: $rich-black-fogra-29;
     margin-top: 20px;
     margin-bottom: 20px;
+    text-align: center;
+  }
+
+  &__title {
+    padding: 20px;
   }
 }
