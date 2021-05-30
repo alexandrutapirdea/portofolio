@@ -1,8 +1,12 @@
-import React, { useState } from "react";
+import React from "react";
 import { UncontrolledCollapse } from "reactstrap";
 import "./AboutMe.scss";
 
 import FilsWorkshopImg from "../images/fils-workshop.jpg";
+import ReactLogo from "../images/react-logo.png";
+import JavascriptLogo from "../images/javascript-logo.svg";
+import NodejsLogo from "../images/express.webp";
+import Webpack from "../images/webpack.png";
 import InternalWorkshop from "../images/internal-workshop.jpg";
 import Promises from "../images/Promises.png";
 import StorybookGif from "../images/Storybook.gif";
@@ -13,19 +17,6 @@ const redirectTo = (url) => {
 };
 
 const AboutMe = () => {
-  const [isOpenTeaching, setIsOpenTeaching] = useState(true);
-
-  // const toggle = (section) => {
-  //   console.log("🚀 ~ file: AboutMe.js ~ line 19 ~ toggle ~ section", section);
-  //   switch (section) {
-  //     case "Teassching":
-  //       setIsOpenTeaching(!isOpenTeaching);
-  //       break;
-  //     default:
-  //       break;
-  //   }
-  // };
-
   return (
     <div className="about__container">
       <div className="flex-container">
@@ -133,6 +124,35 @@ const AboutMe = () => {
                 );
               }}
             />
+          </div>
+        </UncontrolledCollapse>
+      </div>
+
+      <div className="flex-container">
+        <Separator section="Techical-Expertise" />
+        <UncontrolledCollapse toggler="#Techical-Expertise" defaultOpen={true}>
+          <div className="about__section">
+            <h4 class="about__section__description">
+              I have proven experience with the latest technologies
+            </h4>
+            <div className="inline-containaer">
+              <img
+                src={JavascriptLogo}
+                className="about__section__image inline-image"
+              />
+              <img
+                src={ReactLogo}
+                className="about__section__image inline-image"
+              />
+              <img
+                src={NodejsLogo}
+                className="about__section__image inline-image"
+              />
+              <img
+                src={Webpack}
+                className="about__section__image inline-image"
+              />
+            </div>
           </div>
         </UncontrolledCollapse>
       </div>
