@@ -9,7 +9,7 @@ import NodejsLogo from "../images/express.webp";
 import Webpack from "../images/webpack.png";
 import InternalWorkshop from "../images/internal-workshop.jpg";
 import Promises from "../images/Promises.png";
-import StorybookGif from "../images/Storybook.gif";
+import StorybookGif from "../images/storybook.gif";
 import Separator from "./Separator";
 
 const redirectTo = (url) => {
